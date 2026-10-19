@@ -1,0 +1,18 @@
+{
+  "key.categories.enmitycombat": "Enmity Combat Systems",
+  "key.enmitycombat.codex": "Open Codex",
+  "key.enmitycombat.toggle": "Toggle Combat Mode",
+  "key.enmitycombat.inventory": "Open Inventory (Combat Mode)",
+  "key.enmitycombat.skill1": "Skill 1",
+  "key.enmitycombat.skill2": "Skill 2",
+  "key.enmitycombat.skill3": "Skill 3",
+  "key.enmitycombat.special": "Special Skill",
+  "key.enmitycombat.heavy": "Heavy Attack",
+  "key.enmitycombat.ultimate": "Ultimate (hold to transform)",
+  "key.enmitycombat.block": "Block / Parry",
+  "key.enmitycombat.dodge": "Dodge",
+  "effect.enmitycombat.stun": "Stun",
+  "enmitycombat.on_cooldown": "Skill on cooldown",
+  "enmitycombat.no_energy": "Not enough energy",
+  "enmitycombat.guard_broken": "Guard broken!"
+}

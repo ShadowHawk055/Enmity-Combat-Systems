@@ -1,0 +1,33 @@
+{
+  "name": "Falling Moon",
+  "description": "Lunging overhead finisher with heavy knockback.",
+  "cooldown": 0,
+  "duration": 22,
+  "cancel_from": 14,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:ex_basic_3"
+    },
+    {
+      "tick": 4,
+      "type": "fx",
+      "fx": "enmitycombat:ex_slash_big",
+      "at": "self"
+    },
+    {
+      "tick": 6,
+      "type": "hitbox",
+      "range": 3.6,
+      "angle": 110,
+      "damage": 1.5,
+      "knockback": 0.9
+    },
+    {
+      "tick": 0,
+      "type": "dash",
+      "speed": 0.35
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "duration": 45,
+  "hide_hud": true,
+  "letterbox": true,
+  "keyframes": [
+    {
+      "tick": 0,
+      "pos": [
+        0,
+        0.4,
+        2.8
+      ],
+      "look_at": [
+        0,
+        1.0,
+        0
+      ],
+      "fov": 60,
+      "ease": "linear"
+    },
+    {
+      "tick": 22,
+      "pos": [
+        0,
+        1.8,
+        2.2
+      ],
+      "look_at": [
+        0,
+        1.7,
+        0
+      ],
+      "fov": 45,
+      "ease": "ease_out"
+    },
+    {
+      "tick": 45,
+      "pos": [
+        2.5,
+        1.8,
+        3.5
+      ],
+      "look_at": [
+        0,
+        1.3,
+        0
+      ],
+      "fov": 75,
+      "ease": "ease_in_out"
+    }
+  ]
+}

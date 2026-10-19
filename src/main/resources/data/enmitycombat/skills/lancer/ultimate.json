@@ -1,0 +1,102 @@
+{
+  "name": "Phalanx",
+  "description": "Cutscene ultimate. A storm of spear thrusts followed by a shockwave that heals you. Costs full energy.",
+  "cooldown": 0,
+  "duration": 80,
+  "cancel_from": 80,
+  "energy_cost": 120,
+  "uninterruptible": true,
+  "lock_movement": true,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "invuln",
+      "ticks": 85
+    },
+    {
+      "tick": 0,
+      "type": "camera",
+      "cutscene": "enmitycombat:example_ultimate"
+    },
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:lancer_ultimate"
+    },
+    {
+      "tick": 24,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6
+    },
+    {
+      "tick": 28,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6
+    },
+    {
+      "tick": 32,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6
+    },
+    {
+      "tick": 36,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6
+    },
+    {
+      "tick": 40,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6
+    },
+    {
+      "tick": 44,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6
+    },
+    {
+      "tick": 52,
+      "type": "fx",
+      "fx": "enmitycombat:lancer_phalanx_burst",
+      "at": "self"
+    },
+    {
+      "tick": 52,
+      "type": "hitbox",
+      "range": 8,
+      "angle": 360,
+      "damage": 9.0,
+      "knockback": 2.0,
+      "guard_break": true,
+      "stun": 30
+    },
+    {
+      "tick": 52,
+      "type": "heal",
+      "amount": 8.0
+    }
+  ]
+}

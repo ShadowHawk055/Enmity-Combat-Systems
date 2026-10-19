@@ -1,0 +1,43 @@
+{
+  "name": "Bulwark",
+  "description": "Plant your spear: briefly untouchable and shielded by Resistance, while stunning nearby enemies.",
+  "cooldown": 240,
+  "duration": 26,
+  "cancel_from": 26,
+  "energy_gain": 8,
+  "lock_movement": true,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:lancer_skill_2"
+    },
+    {
+      "tick": 0,
+      "type": "invuln",
+      "ticks": 20
+    },
+    {
+      "tick": 0,
+      "type": "mob_effect",
+      "effect": "minecraft:resistance",
+      "duration": 100,
+      "amplifier": 1
+    },
+    {
+      "tick": 4,
+      "type": "fx",
+      "fx": "enmitycombat:lancer_bulwark",
+      "at": "self"
+    },
+    {
+      "tick": 6,
+      "type": "hitbox",
+      "range": 4,
+      "angle": 360,
+      "damage": 0.8,
+      "knockback": 0.4,
+      "stun": 15
+    }
+  ]
+}

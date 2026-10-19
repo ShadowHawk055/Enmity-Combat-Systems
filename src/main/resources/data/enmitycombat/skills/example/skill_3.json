@@ -1,0 +1,55 @@
+{
+  "name": "Whirlwind",
+  "description": "Spin three times, hitting everything around you, and gain a short damage boost. You cannot move while casting.",
+  "cooldown": 260,
+  "duration": 30,
+  "cancel_from": 24,
+  "energy_gain": 10,
+  "energy_on_hit": 2,
+  "lock_movement": true,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:ex_skill_3"
+    },
+    {
+      "tick": 4,
+      "type": "fx",
+      "fx": "enmitycombat:ex_whirlwind",
+      "at": "self"
+    },
+    {
+      "tick": 8,
+      "type": "hitbox",
+      "range": 4.5,
+      "angle": 360,
+      "damage": 1.5,
+      "knockback": 0.5
+    },
+    {
+      "tick": 14,
+      "type": "hitbox",
+      "range": 4.5,
+      "angle": 360,
+      "damage": 1.5,
+      "knockback": 0.5
+    },
+    {
+      "tick": 20,
+      "type": "hitbox",
+      "range": 4.5,
+      "angle": 360,
+      "damage": 2.0,
+      "knockback": 1.0
+    },
+    {
+      "tick": 0,
+      "type": "buff",
+      "id": "whirl_haste",
+      "cooldown_rate": 1.0,
+      "damage_mult": 1.1,
+      "duration": 100
+    }
+  ]
+}

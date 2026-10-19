@@ -1,0 +1,37 @@
+{
+  "name": "Rising Slash",
+  "description": "Dash forward and launch a wide upward slash. Builds energy on hit.",
+  "cooldown": 120,
+  "duration": 22,
+  "cancel_from": 14,
+  "energy_gain": 6,
+  "energy_on_hit": 3,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:ex_skill_1"
+    },
+    {
+      "tick": 2,
+      "type": "dash",
+      "speed": 0.9,
+      "vertical": 0.1
+    },
+    {
+      "tick": 4,
+      "type": "fx",
+      "fx": "enmitycombat:ex_rising_slash",
+      "at": "front",
+      "distance": 1.5
+    },
+    {
+      "tick": 5,
+      "type": "hitbox",
+      "range": 3.5,
+      "angle": 90,
+      "damage": 2.2,
+      "knockback": 0.7
+    }
+  ]
+}

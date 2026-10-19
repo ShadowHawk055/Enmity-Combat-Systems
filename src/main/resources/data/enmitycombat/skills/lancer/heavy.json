@@ -1,0 +1,28 @@
+{
+  "name": "Gatebreaker Charge",
+  "description": "Rush forward and ram through enemies.",
+  "cooldown": 150,
+  "duration": 26,
+  "cancel_from": 20,
+  "energy_on_hit": 4,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:lancer_heavy"
+    },
+    {
+      "tick": 2,
+      "type": "dash",
+      "speed": 1.4
+    },
+    {
+      "tick": 6,
+      "type": "hitbox",
+      "range": 3.4,
+      "angle": 90,
+      "damage": 3.0,
+      "knockback": 2.0
+    }
+  ]
+}

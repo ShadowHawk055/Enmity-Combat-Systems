@@ -1,0 +1,43 @@
+{
+  "name": "Skyfall Spear",
+  "description": "Leap and drive your spear down in a guard-breaking, stunning impact.",
+  "cooldown": 360,
+  "duration": 30,
+  "cancel_from": 24,
+  "energy_gain": 12,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:lancer_special"
+    },
+    {
+      "tick": 0,
+      "type": "invuln",
+      "ticks": 14
+    },
+    {
+      "tick": 2,
+      "type": "dash",
+      "speed": 0.5,
+      "vertical": 0.7
+    },
+    {
+      "tick": 12,
+      "type": "fx",
+      "fx": "enmitycombat:lancer_skyfall",
+      "at": "front",
+      "distance": 2
+    },
+    {
+      "tick": 12,
+      "type": "hitbox",
+      "range": 5,
+      "angle": 360,
+      "damage": 3.5,
+      "knockback": 1.0,
+      "guard_break": true,
+      "stun": 30
+    }
+  ]
+}

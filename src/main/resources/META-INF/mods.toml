@@ -1,0 +1,40 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="enmitycombat"
+version="${mod_version}"
+displayName="Enmity Combat Systems"
+description='''
+Action-RPG / gacha style combat: block, parry, dodge, skills, ultimates, cutscenes, passives.
+Fully data-driven (datapack JSON). Effects by Photon, animations by PlayerAnimator.
+'''
+
+[[dependencies.enmitycombat]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.enmitycombat]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.enmitycombat]]
+modId="playeranimator"
+mandatory=true
+versionRange="[1.0,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.enmitycombat]]
+modId="photon"
+mandatory=true
+versionRange="[1.0,)"
+ordering="NONE"
+side="CLIENT"

@@ -1,0 +1,36 @@
+{
+  "name": "Gate Lunge",
+  "description": "Charge forward with a guard-breaking thrust.",
+  "cooldown": 110,
+  "duration": 22,
+  "cancel_from": 14,
+  "energy_on_hit": 4,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:lancer_skill_1"
+    },
+    {
+      "tick": 2,
+      "type": "dash",
+      "speed": 1.2
+    },
+    {
+      "tick": 4,
+      "type": "fx",
+      "fx": "enmitycombat:lancer_lunge",
+      "at": "front",
+      "distance": 2
+    },
+    {
+      "tick": 5,
+      "type": "hitbox",
+      "range": 4.5,
+      "angle": 40,
+      "damage": 2.2,
+      "knockback": 0.6,
+      "guard_break": true
+    }
+  ]
+}

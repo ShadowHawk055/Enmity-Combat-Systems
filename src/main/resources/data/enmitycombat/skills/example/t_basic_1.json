@@ -1,0 +1,28 @@
+{
+  "name": "Ember Cut",
+  "description": "Faster, longer-reaching slash while transformed.",
+  "cooldown": 0,
+  "duration": 10,
+  "cancel_from": 6,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:ex_t_basic_1"
+    },
+    {
+      "tick": 2,
+      "type": "fx",
+      "fx": "enmitycombat:ex_t_slash",
+      "at": "self"
+    },
+    {
+      "tick": 3,
+      "type": "hitbox",
+      "range": 3.6,
+      "angle": 110,
+      "damage": 1.2,
+      "knockback": 0.3
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "name": "Example Swordsman",
+  "title": "Wandering Blade",
+  "description": "A drifter who wins by reading the fight. Parry on the beat, dodge at the last moment, then answer with fast, precise cuts. Parries and perfect dodges feed damage windows and faster cooldowns, and a full energy bar lets you either unleash Moonfall or awaken into a hard-hitting transformed state.",
+  "max_energy": 100,
+  "base_attack": 6.0,
+  "basic_cooldown_reduction": 6,
+  "combo_reset_ticks": 30,
+  "moveset": {
+    "basic": [
+      "enmitycombat:example/basic_1",
+      "enmitycombat:example/basic_2",
+      "enmitycombat:example/basic_3"
+    ],
+    "skill_1": "enmitycombat:example/skill_1",
+    "skill_2": "enmitycombat:example/skill_2",
+    "skill_3": "enmitycombat:example/skill_3",
+    "special": "enmitycombat:example/special",
+    "heavy": "enmitycombat:example/heavy",
+    "ultimate": "enmitycombat:example/ultimate",
+    "ultimate_hold": "enmitycombat:example/ultimate_hold"
+  },
+  "transformed_moveset": {
+    "basic": [
+      "enmitycombat:example/t_basic_1",
+      "enmitycombat:example/t_basic_2"
+    ],
+    "heavy": "enmitycombat:example/t_heavy",
+    "ultimate": "enmitycombat:example/t_ultimate"
+  },
+  "animations": {
+    "block": "enmitycombat:ex_block",
+    "parry": "enmitycombat:ex_parry",
+    "dodge": "enmitycombat:ex_dodge"
+  },
+  "fx": {
+    "parry": "enmitycombat:ex_parry_fx",
+    "perfect_dodge": "enmitycombat:ex_perfect_dodge_fx",
+    "guard_break": "enmitycombat:ex_guard_break_fx",
+    "transform_end": "enmitycombat:ex_transform_end_fx"
+  },
+  "passives": [
+    {
+      "id": "iron_will",
+      "trigger": "always",
+      "effects": [
+        {
+          "type": "attribute",
+          "attribute": "minecraft:generic.max_health",
+          "amount": 4.0,
+          "operation": "addition"
+        }
+      ],
+      "name": "Iron Will",
+      "description": "+2 hearts of maximum health while this character is equipped."
+    },
+    {
+      "id": "riposte",
+      "trigger": "on_parry",
+      "effects": [
+        {
+          "type": "buff",
+          "id": "riposte",
+          "damage_mult": 1.3,
+          "duration": 100
+        },
+        {
+          "type": "cooldown_reduce",
+          "ticks": 40
+        }
+      ],
+      "name": "Riposte",
+      "description": "A successful parry grants +30% damage for 5 seconds and trims 2 seconds off skill cooldowns."
+    },
+    {
+      "id": "afterimage",
+      "trigger": "on_perfect_dodge",
+      "effects": [
+        {
+          "type": "buff",
+          "id": "afterimage",
+          "damage_mult": 1.2,
+          "cooldown_rate": 1.5,
+          "duration": 120
+        }
+      ],
+      "name": "Afterimage",
+      "description": "A perfect dodge grants +20% damage and 50% faster cooldown recovery for 6 seconds."
+    },
+    {
+      "id": "bloodlust",
+      "trigger": "on_hit",
+      "cooldown": 20,
+      "effects": [
+        {
+          "type": "heal",
+          "amount": 0.5
+        },
+        {
+          "type": "energy",
+          "amount": 1.0
+        }
+      ],
+      "name": "Bloodlust",
+      "description": "Hits heal a little and add energy (1 second internal cooldown)."
+    },
+    {
+      "id": "ult_afterglow",
+      "trigger": "on_ultimate",
+      "effects": [
+        {
+          "type": "mob_effect",
+          "effect": "minecraft:speed",
+          "duration": 160,
+          "amplifier": 1
+        }
+      ],
+      "name": "Afterglow",
+      "description": "Casting any ultimate grants Speed II for 8 seconds."
+    }
+  ],
+  "props": [
+    {
+      "id": "blade",
+      "item": "minecraft:iron_sword",
+      "form": "base",
+      "attach": "right_hand",
+      "idle": {
+        "attach": "back",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          -40
+        ]
+      }
+    },
+    {
+      "id": "blade_awakened",
+      "item": "minecraft:netherite_sword",
+      "form": "transformed",
+      "attach": "right_hand",
+      "idle": {
+        "attach": "back",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          -40
+        ]
+      }
+    }
+  ]
+}

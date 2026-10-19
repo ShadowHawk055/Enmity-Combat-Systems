@@ -1,0 +1,28 @@
+{
+  "name": "Ember Return",
+  "description": "Transformed follow-up with extra knockback.",
+  "cooldown": 0,
+  "duration": 12,
+  "cancel_from": 7,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:ex_t_basic_2"
+    },
+    {
+      "tick": 2,
+      "type": "fx",
+      "fx": "enmitycombat:ex_t_slash",
+      "at": "self"
+    },
+    {
+      "tick": 3,
+      "type": "hitbox",
+      "range": 3.8,
+      "angle": 110,
+      "damage": 1.4,
+      "knockback": 0.8
+    }
+  ]
+}

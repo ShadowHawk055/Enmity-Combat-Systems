@@ -1,0 +1,98 @@
+{
+  "name": "Vanguard Lancer",
+  "title": "Shield of the Gate",
+  "description": "A defensive bruiser who holds the line. Long-reach spear attacks keep enemies at a distance, guard-breaking lunges crack open tough foes, and parrying heals and empowers the Lancer. Has no transformation: holding the Ultimate key does nothing for this character.",
+  "max_energy": 120,
+  "base_attack": 5.5,
+  "basic_cooldown_reduction": 4,
+  "combo_reset_ticks": 36,
+  "moveset": {
+    "basic": [
+      "enmitycombat:lancer/basic_1",
+      "enmitycombat:lancer/basic_2"
+    ],
+    "skill_1": "enmitycombat:lancer/skill_1",
+    "skill_2": "enmitycombat:lancer/skill_2",
+    "skill_3": "enmitycombat:lancer/skill_3",
+    "special": "enmitycombat:lancer/special",
+    "heavy": "enmitycombat:lancer/heavy",
+    "ultimate": "enmitycombat:lancer/ultimate"
+  },
+  "animations": {
+    "block": "enmitycombat:lancer_block",
+    "parry": "enmitycombat:lancer_parry",
+    "dodge": "enmitycombat:lancer_dodge"
+  },
+  "fx": {
+    "parry": "enmitycombat:lancer_parry_fx",
+    "perfect_dodge": "enmitycombat:lancer_perfect_dodge_fx",
+    "guard_break": "enmitycombat:lancer_guard_break_fx"
+  },
+  "passives": [
+    {
+      "id": "stalwart",
+      "name": "Stalwart",
+      "description": "+4 armor while this character is equipped.",
+      "trigger": "always",
+      "effects": [
+        {
+          "type": "attribute",
+          "attribute": "minecraft:generic.armor",
+          "amount": 4.0,
+          "operation": "addition"
+        }
+      ]
+    },
+    {
+      "id": "hold_the_line",
+      "name": "Hold the Line",
+      "description": "Blocking a hit grants 3 energy (1 second internal cooldown).",
+      "trigger": "on_block",
+      "cooldown": 20,
+      "effects": [
+        {
+          "type": "energy",
+          "amount": 3.0
+        }
+      ]
+    },
+    {
+      "id": "counterthrust",
+      "name": "Counterthrust",
+      "description": "A successful parry heals 2 hearts and grants +50% damage for 6 seconds.",
+      "trigger": "on_parry",
+      "effects": [
+        {
+          "type": "heal",
+          "amount": 4.0
+        },
+        {
+          "type": "buff",
+          "id": "counterthrust",
+          "damage_mult": 1.5,
+          "duration": 120
+        }
+      ]
+    }
+  ],
+  "props": [
+    {
+      "id": "spear",
+      "item": "minecraft:trident",
+      "attach": "right_hand",
+      "idle": {
+        "attach": "back",
+        "offset": [
+          0,
+          2,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          -20
+        ]
+      }
+    }
+  ]
+}
