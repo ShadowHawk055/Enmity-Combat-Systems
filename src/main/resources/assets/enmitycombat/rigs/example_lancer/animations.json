@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "example_lancer_idle": {
+      "loop": true,
+      "animation_length": 1.0,
+      "bones": {
+        "spear": {
+          "scale": [
+            0,
+            0,
+            0
+          ]
+        },
+        "spear_back": {
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    },
+    "example_lancer_idle_drawn": {
+      "loop": true,
+      "animation_length": 1.0,
+      "bones": {
+        "spear": {
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "spear_back": {
+          "scale": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

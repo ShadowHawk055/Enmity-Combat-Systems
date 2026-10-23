@@ -1,0 +1,20 @@
+{
+  "rotation_signs": [
+    -1,
+    1,
+    -1
+  ],
+  "position_signs": [
+    1,
+    -1,
+    1
+  ],
+  "camera_rotation_signs": [
+    1,
+    1,
+    1
+  ],
+  "idle": "enmitycombat:example_swordsman_idle",
+  "idle_drawn": "enmitycombat:example_swordsman_idle_drawn",
+  "idle_transformed": "enmitycombat:example_swordsman_idle_transformed"
+}

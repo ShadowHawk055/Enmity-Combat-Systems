@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "placeholder": true,
+  "animations": {
+    "animation.example_lancer.parry": {
+      "animation_length": 0.5,
+      "bones": {}
+    }
+  }
+}

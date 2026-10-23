@@ -1,0 +1,119 @@
+{
+  "format_version": "1.8.0",
+  "placeholder": true,
+  "animations": {
+    "animation.example_swordsman.ultimate": {
+      "animation_length": 3.5,
+      "bones": {
+        "camera": {
+          "position": {
+            "0": {
+              "post": [
+                40.0,
+                16.0,
+                -56.0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "1.2": {
+              "post": [
+                0,
+                19.2,
+                -32.0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "2.2": {
+              "post": [
+                -48.0,
+                35.2,
+                -72.0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "3.5": {
+              "post": [
+                -56.0,
+                48.0,
+                48.0
+              ],
+              "lerp_mode": "catmullrom"
+            }
+          }
+        },
+        "camera_target": {
+          "position": {
+            "0": {
+              "post": [
+                0,
+                20.8,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "1.2": {
+              "post": [
+                0,
+                25.6,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "2.2": {
+              "post": [
+                0,
+                19.2,
+                -64
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "3.5": {
+              "post": [
+                0,
+                19.2,
+                -48
+              ],
+              "lerp_mode": "catmullrom"
+            }
+          }
+        },
+        "camera_fov": {
+          "position": {
+            "0": {
+              "post": [
+                70,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "1.2": {
+              "post": [
+                55,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "2.2": {
+              "post": [
+                85,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "3.5": {
+              "post": [
+                70,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            }
+          }
+        }
+      }
+    }
+  }
+}

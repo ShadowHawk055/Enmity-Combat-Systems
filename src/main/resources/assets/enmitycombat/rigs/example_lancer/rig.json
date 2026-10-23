@@ -1,0 +1,19 @@
+{
+  "rotation_signs": [
+    -1,
+    1,
+    -1
+  ],
+  "position_signs": [
+    1,
+    -1,
+    1
+  ],
+  "camera_rotation_signs": [
+    1,
+    1,
+    1
+  ],
+  "idle": "enmitycombat:example_lancer_idle",
+  "idle_drawn": "enmitycombat:example_lancer_idle_drawn"
+}
