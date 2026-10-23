@@ -1,0 +1,37 @@
+{
+  "name": "Ember Cut",
+  "description": "Faster, longer-reaching slash while transformed.",
+  "cooldown": 0,
+  "duration": 10,
+  "cancel_from": 6,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_t_basic_1"
+    },
+    {
+      "tick": 2,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_t_basic_1_slash",
+      "at": "self"
+    },
+    {
+      "tick": 2,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_t_basic_1_slash",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 3,
+      "type": "hitbox",
+      "range": 3.6,
+      "angle": 110,
+      "damage": 1.2,
+      "knockback": 0.3,
+      "hit_fx": "enmitycombat:example_swordsman_t_basic_1_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_basic_1_hit"
+    }
+  ]
+}

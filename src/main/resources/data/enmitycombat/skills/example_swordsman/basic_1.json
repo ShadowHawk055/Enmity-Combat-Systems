@@ -1,0 +1,37 @@
+{
+  "name": "Crescent Cut",
+  "description": "A fast horizontal slash.",
+  "cooldown": 0,
+  "duration": 14,
+  "cancel_from": 8,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_basic_1"
+    },
+    {
+      "tick": 3,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_basic_1_slash",
+      "at": "self"
+    },
+    {
+      "tick": 3,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_basic_1_slash",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 4,
+      "type": "hitbox",
+      "range": 3.2,
+      "angle": 110,
+      "damage": 0.8,
+      "knockback": 0.3,
+      "hit_fx": "enmitycombat:example_swordsman_basic_1_hit",
+      "hit_sound": "enmitycombat:example_swordsman_basic_1_hit"
+    }
+  ]
+}

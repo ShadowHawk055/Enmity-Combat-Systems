@@ -1,0 +1,57 @@
+{
+  "name": "Gatebreaker Charge",
+  "description": "Rush forward and ram through enemies.",
+  "cooldown": 150,
+  "duration": 26,
+  "cancel_from": 20,
+  "energy_on_hit": 4,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_lancer_heavy"
+    },
+    {
+      "tick": 2,
+      "type": "fx",
+      "fx": "enmitycombat:example_lancer_heavy_charge",
+      "at": "self"
+    },
+    {
+      "tick": 2,
+      "type": "sound",
+      "sound": "enmitycombat:example_lancer_heavy_charge",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 2,
+      "type": "dash",
+      "speed": 1.4
+    },
+    {
+      "tick": 6,
+      "type": "fx",
+      "fx": "enmitycombat:example_lancer_heavy_impact",
+      "at": "front",
+      "distance": 2
+    },
+    {
+      "tick": 6,
+      "type": "sound",
+      "sound": "enmitycombat:example_lancer_heavy_impact",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 6,
+      "type": "hitbox",
+      "range": 3.4,
+      "angle": 90,
+      "damage": 3.0,
+      "knockback": 2.0,
+      "hit_fx": "enmitycombat:example_lancer_heavy_hit",
+      "hit_sound": "enmitycombat:example_lancer_heavy_hit"
+    }
+  ]
+}

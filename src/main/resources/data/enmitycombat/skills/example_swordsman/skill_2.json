@@ -1,0 +1,61 @@
+{
+  "name": "Breaker Thrust",
+  "description": "A piercing lunge. Guard break: shatters blocks and parries, and stuns the target.",
+  "cooldown": 200,
+  "duration": 28,
+  "cancel_from": 18,
+  "energy_gain": 8,
+  "energy_on_hit": 4,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_skill_2"
+    },
+    {
+      "tick": 3,
+      "type": "dash",
+      "speed": 1.1
+    },
+    {
+      "tick": 5,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_skill_2_cast",
+      "at": "front",
+      "distance": 2
+    },
+    {
+      "tick": 5,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_skill_2_cast",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 6,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_skill_2_impact",
+      "at": "front",
+      "distance": 4
+    },
+    {
+      "tick": 6,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_skill_2_impact",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 6,
+      "type": "hitbox",
+      "range": 4.2,
+      "angle": 40,
+      "damage": 2.6,
+      "knockback": 0.3,
+      "guard_break": true,
+      "stun": 20,
+      "hit_fx": "enmitycombat:example_swordsman_skill_2_hit",
+      "hit_sound": "enmitycombat:example_swordsman_skill_2_hit"
+    }
+  ]
+}

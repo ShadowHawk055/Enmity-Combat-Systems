@@ -1,0 +1,148 @@
+{
+  "name": "Phalanx",
+  "description": "Cutscene ultimate. A storm of spear thrusts followed by a shockwave that heals you. Costs full energy.",
+  "cooldown": 0,
+  "duration": 80,
+  "cancel_from": 80,
+  "energy_cost": 120,
+  "uninterruptible": true,
+  "lock_movement": true,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_lancer_ultimate"
+    },
+    {
+      "tick": 0,
+      "type": "camera",
+      "animation": "enmitycombat:example_lancer_ultimate",
+      "hide_hud": true,
+      "letterbox": true,
+      "blend_in": 0,
+      "blend_out": 8
+    },
+    {
+      "tick": 0,
+      "type": "invuln",
+      "ticks": 85
+    },
+    {
+      "tick": 0,
+      "type": "impact_frames",
+      "sequence": "enmitycombat:example_lancer_ultimate",
+      "start_frame": 72,
+      "frame_duration": 2
+    },
+    {
+      "tick": 20,
+      "type": "fx",
+      "fx": "enmitycombat:example_lancer_ultimate_charge",
+      "at": "self"
+    },
+    {
+      "tick": 20,
+      "type": "sound",
+      "sound": "enmitycombat:example_lancer_ultimate_charge",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 24,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6,
+      "hit_fx": "enmitycombat:example_lancer_ultimate_hit",
+      "hit_sound": "enmitycombat:example_lancer_ultimate_hit"
+    },
+    {
+      "tick": 28,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6,
+      "hit_fx": "enmitycombat:example_lancer_ultimate_hit",
+      "hit_sound": "enmitycombat:example_lancer_ultimate_hit"
+    },
+    {
+      "tick": 32,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6,
+      "hit_fx": "enmitycombat:example_lancer_ultimate_hit",
+      "hit_sound": "enmitycombat:example_lancer_ultimate_hit"
+    },
+    {
+      "tick": 36,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6,
+      "hit_fx": "enmitycombat:example_lancer_ultimate_hit",
+      "hit_sound": "enmitycombat:example_lancer_ultimate_hit"
+    },
+    {
+      "tick": 40,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6,
+      "hit_fx": "enmitycombat:example_lancer_ultimate_hit",
+      "hit_sound": "enmitycombat:example_lancer_ultimate_hit"
+    },
+    {
+      "tick": 44,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 120,
+      "damage": 1.5,
+      "knockback": 0.1,
+      "stun": 6,
+      "hit_fx": "enmitycombat:example_lancer_ultimate_hit",
+      "hit_sound": "enmitycombat:example_lancer_ultimate_hit"
+    },
+    {
+      "tick": 52,
+      "type": "fx",
+      "fx": "enmitycombat:example_lancer_ultimate_burst",
+      "at": "front",
+      "distance": 3
+    },
+    {
+      "tick": 52,
+      "type": "sound",
+      "sound": "enmitycombat:example_lancer_ultimate_burst",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 52,
+      "type": "hitbox",
+      "range": 8,
+      "angle": 360,
+      "damage": 9.0,
+      "knockback": 2.0,
+      "guard_break": true,
+      "stun": 30,
+      "hit_fx": "enmitycombat:example_lancer_ultimate_hit",
+      "hit_sound": "enmitycombat:example_lancer_ultimate_hit"
+    },
+    {
+      "tick": 52,
+      "type": "heal",
+      "amount": 8.0
+    }
+  ]
+}

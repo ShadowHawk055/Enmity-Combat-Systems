@@ -8,25 +8,25 @@
   "combo_reset_ticks": 36,
   "moveset": {
     "basic": [
-      "enmitycombat:lancer/basic_1",
-      "enmitycombat:lancer/basic_2"
+      "enmitycombat:example_lancer/basic_1",
+      "enmitycombat:example_lancer/basic_2"
     ],
-    "skill_1": "enmitycombat:lancer/skill_1",
-    "skill_2": "enmitycombat:lancer/skill_2",
-    "skill_3": "enmitycombat:lancer/skill_3",
-    "special": "enmitycombat:lancer/special",
-    "heavy": "enmitycombat:lancer/heavy",
-    "ultimate": "enmitycombat:lancer/ultimate"
+    "skill_1": "enmitycombat:example_lancer/skill_1",
+    "skill_2": "enmitycombat:example_lancer/skill_2",
+    "skill_3": "enmitycombat:example_lancer/skill_3",
+    "special": "enmitycombat:example_lancer/special",
+    "heavy": "enmitycombat:example_lancer/heavy",
+    "ultimate": "enmitycombat:example_lancer/ultimate"
   },
   "animations": {
-    "block": "enmitycombat:lancer_block",
-    "parry": "enmitycombat:lancer_parry",
-    "dodge": "enmitycombat:lancer_dodge"
+    "block": "enmitycombat:example_lancer_block",
+    "parry": "enmitycombat:example_lancer_parry",
+    "dodge": "enmitycombat:example_lancer_dodge"
   },
   "fx": {
-    "parry": "enmitycombat:lancer_parry_fx",
-    "perfect_dodge": "enmitycombat:lancer_perfect_dodge_fx",
-    "guard_break": "enmitycombat:lancer_guard_break_fx"
+    "parry": "enmitycombat:example_lancer_parry",
+    "perfect_dodge": "enmitycombat:example_lancer_perfect_dodge",
+    "guard_break": "enmitycombat:example_lancer_guard_break"
   },
   "passives": [
     {
@@ -75,24 +75,15 @@
       ]
     }
   ],
-  "props": [
-    {
-      "id": "spear",
-      "item": "minecraft:trident",
-      "attach": "right_hand",
-      "idle": {
-        "attach": "back",
-        "offset": [
-          0,
-          2,
-          0
-        ],
-        "rotation": [
-          0,
-          0,
-          -20
-        ]
-      }
-    }
-  ]
+  "rig": "enmitycombat:example_lancer",
+  "sounds": {
+    "block": "enmitycombat:example_lancer_block",
+    "parry": "enmitycombat:example_lancer_parry",
+    "perfect_dodge": "enmitycombat:example_lancer_perfect_dodge",
+    "guard_break": "enmitycombat:example_lancer_guard_break"
+  },
+  "hit": {
+    "fx": "enmitycombat:example_lancer_hit",
+    "sound": "enmitycombat:example_lancer_hit"
+  }
 }

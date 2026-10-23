@@ -1,0 +1,219 @@
+{
+  "name": "Crimson Eclipse",
+  "description": "Transformed ultimate. Dash through your enemies, pin them with an eight-hit barrage, then finish with a guard-breaking slam that heals you and grants +50% damage and faster cooldowns for 10 seconds. Ends the transformation. Costs 50 energy.",
+  "duration": 100,
+  "cancel_from": 100,
+  "energy_cost": 50,
+  "uninterruptible": true,
+  "lock_movement": true,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_t_ultimate"
+    },
+    {
+      "tick": 0,
+      "type": "camera",
+      "animation": "enmitycombat:example_swordsman_t_ultimate",
+      "hide_hud": true,
+      "letterbox": true,
+      "blend_in": 0,
+      "blend_out": 8
+    },
+    {
+      "tick": 0,
+      "type": "invuln",
+      "ticks": 105
+    },
+    {
+      "tick": 0,
+      "type": "impact_frames",
+      "sequence": "enmitycombat:example_swordsman_t_ultimate",
+      "start_frame": 108,
+      "frame_duration": 2
+    },
+    {
+      "tick": 16,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_t_ultimate_charge",
+      "at": "self"
+    },
+    {
+      "tick": 16,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_t_ultimate_charge",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 30,
+      "type": "dash",
+      "speed": 1.7
+    },
+    {
+      "tick": 32,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_t_ultimate_dash",
+      "at": "self"
+    },
+    {
+      "tick": 32,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_t_ultimate_dash",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 36,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 360,
+      "damage": 1.2,
+      "knockback": 0.0,
+      "stun": 8,
+      "hit_fx": "enmitycombat:example_swordsman_t_ultimate_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_ultimate_hit"
+    },
+    {
+      "tick": 40,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_t_ultimate_barrage",
+      "at": "front",
+      "distance": 2.5
+    },
+    {
+      "tick": 40,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_t_ultimate_barrage",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 40,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 360,
+      "damage": 1.2,
+      "knockback": 0.0,
+      "stun": 8,
+      "hit_fx": "enmitycombat:example_swordsman_t_ultimate_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_ultimate_hit"
+    },
+    {
+      "tick": 44,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 360,
+      "damage": 1.2,
+      "knockback": 0.0,
+      "stun": 8,
+      "hit_fx": "enmitycombat:example_swordsman_t_ultimate_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_ultimate_hit"
+    },
+    {
+      "tick": 48,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 360,
+      "damage": 1.2,
+      "knockback": 0.0,
+      "stun": 8,
+      "hit_fx": "enmitycombat:example_swordsman_t_ultimate_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_ultimate_hit"
+    },
+    {
+      "tick": 52,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 360,
+      "damage": 1.2,
+      "knockback": 0.0,
+      "stun": 8,
+      "hit_fx": "enmitycombat:example_swordsman_t_ultimate_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_ultimate_hit"
+    },
+    {
+      "tick": 56,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 360,
+      "damage": 1.2,
+      "knockback": 0.0,
+      "stun": 8,
+      "hit_fx": "enmitycombat:example_swordsman_t_ultimate_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_ultimate_hit"
+    },
+    {
+      "tick": 60,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 360,
+      "damage": 1.2,
+      "knockback": 0.0,
+      "stun": 8,
+      "hit_fx": "enmitycombat:example_swordsman_t_ultimate_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_ultimate_hit"
+    },
+    {
+      "tick": 64,
+      "type": "hitbox",
+      "range": 6,
+      "angle": 360,
+      "damage": 1.2,
+      "knockback": 0.0,
+      "stun": 8,
+      "hit_fx": "enmitycombat:example_swordsman_t_ultimate_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_ultimate_hit"
+    },
+    {
+      "tick": 72,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_t_ultimate_burst",
+      "at": "front",
+      "distance": 3
+    },
+    {
+      "tick": 72,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_t_ultimate_burst",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 72,
+      "type": "hitbox",
+      "range": 9,
+      "angle": 360,
+      "damage": 14.0,
+      "knockback": 2.5,
+      "guard_break": true,
+      "stun": 40,
+      "hit_fx": "enmitycombat:example_swordsman_t_ultimate_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_ultimate_hit"
+    },
+    {
+      "tick": 72,
+      "type": "heal",
+      "amount": 6.0
+    },
+    {
+      "tick": 72,
+      "type": "buff",
+      "id": "eclipse_afterglow",
+      "damage_mult": 1.5,
+      "cooldown_rate": 2.0,
+      "duration": 200
+    },
+    {
+      "tick": 72,
+      "type": "cooldown_reduce",
+      "fraction": 0.5
+    },
+    {
+      "tick": 78,
+      "type": "transform",
+      "end": true
+    }
+  ]
+}

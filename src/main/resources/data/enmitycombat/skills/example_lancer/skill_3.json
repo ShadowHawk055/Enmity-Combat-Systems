@@ -1,0 +1,51 @@
+{
+  "name": "Sweeping Thrust",
+  "description": "A wide spear sweep that launches everything around you.",
+  "cooldown": 180,
+  "duration": 24,
+  "cancel_from": 18,
+  "energy_on_hit": 3,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_lancer_skill_3"
+    },
+    {
+      "tick": 5,
+      "type": "fx",
+      "fx": "enmitycombat:example_lancer_skill_3_sweep",
+      "at": "self"
+    },
+    {
+      "tick": 5,
+      "type": "sound",
+      "sound": "enmitycombat:example_lancer_skill_3_sweep",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 8,
+      "type": "fx",
+      "fx": "enmitycombat:example_lancer_skill_3_impact",
+      "at": "self"
+    },
+    {
+      "tick": 8,
+      "type": "sound",
+      "sound": "enmitycombat:example_lancer_skill_3_impact",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 8,
+      "type": "hitbox",
+      "range": 5,
+      "angle": 360,
+      "damage": 1.8,
+      "knockback": 1.6,
+      "hit_fx": "enmitycombat:example_lancer_skill_3_hit",
+      "hit_sound": "enmitycombat:example_lancer_skill_3_hit"
+    }
+  ]
+}

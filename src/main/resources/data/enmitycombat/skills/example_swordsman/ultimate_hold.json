@@ -1,0 +1,66 @@
+{
+  "name": "Awaken",
+  "description": "Hold the Ultimate key to transform for 30 seconds: new basic chain, new heavy attack and a different ultimate. Costs 60 energy.",
+  "cooldown": 0,
+  "duration": 45,
+  "cancel_from": 45,
+  "energy_cost": 60,
+  "uninterruptible": true,
+  "lock_movement": true,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_ultimate_hold"
+    },
+    {
+      "tick": 0,
+      "type": "camera",
+      "animation": "enmitycombat:example_swordsman_ultimate_hold",
+      "hide_hud": true,
+      "letterbox": true,
+      "blend_in": 0,
+      "blend_out": 8
+    },
+    {
+      "tick": 0,
+      "type": "invuln",
+      "ticks": 50
+    },
+    {
+      "tick": 0,
+      "type": "impact_frames",
+      "sequence": "enmitycombat:example_swordsman_ultimate_hold",
+      "start_frame": 48,
+      "frame_duration": 2
+    },
+    {
+      "tick": 10,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_ultimate_hold_transform",
+      "at": "self"
+    },
+    {
+      "tick": 10,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_ultimate_hold_transform",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 16,
+      "type": "hitbox",
+      "range": 5,
+      "angle": 360,
+      "damage": 1.2,
+      "knockback": 1.5,
+      "hit_fx": "enmitycombat:example_swordsman_ultimate_hold_hit",
+      "hit_sound": "enmitycombat:example_swordsman_ultimate_hold_hit"
+    },
+    {
+      "tick": 16,
+      "type": "transform",
+      "duration": 600
+    }
+  ]
+}

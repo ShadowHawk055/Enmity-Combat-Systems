@@ -1,0 +1,98 @@
+{
+  "name": "Blade Dance",
+  "description": "Become untouchable and carve through nearby enemies in a flurry. The final hit refunds some cooldown.",
+  "cooldown": 400,
+  "duration": 40,
+  "cancel_from": 34,
+  "energy_gain": 12,
+  "energy_on_hit": 3,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_special"
+    },
+    {
+      "tick": 0,
+      "type": "invuln",
+      "ticks": 30
+    },
+    {
+      "tick": 2,
+      "type": "dash",
+      "speed": 1.2
+    },
+    {
+      "tick": 4,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_special_cast",
+      "at": "self"
+    },
+    {
+      "tick": 4,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_special_cast",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 8,
+      "type": "hitbox",
+      "range": 5,
+      "angle": 360,
+      "damage": 1.4,
+      "knockback": 0.3,
+      "hit_fx": "enmitycombat:example_swordsman_special_hit",
+      "hit_sound": "enmitycombat:example_swordsman_special_hit"
+    },
+    {
+      "tick": 14,
+      "type": "hitbox",
+      "range": 5,
+      "angle": 360,
+      "damage": 1.4,
+      "knockback": 0.3,
+      "hit_fx": "enmitycombat:example_swordsman_special_hit",
+      "hit_sound": "enmitycombat:example_swordsman_special_hit"
+    },
+    {
+      "tick": 20,
+      "type": "hitbox",
+      "range": 5,
+      "angle": 360,
+      "damage": 1.4,
+      "knockback": 0.3,
+      "hit_fx": "enmitycombat:example_swordsman_special_hit",
+      "hit_sound": "enmitycombat:example_swordsman_special_hit"
+    },
+    {
+      "tick": 26,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_special_impact",
+      "at": "front",
+      "distance": 3
+    },
+    {
+      "tick": 26,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_special_impact",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 26,
+      "type": "hitbox",
+      "range": 5,
+      "angle": 360,
+      "damage": 2.8,
+      "knockback": 1.2,
+      "hit_fx": "enmitycombat:example_swordsman_special_hit",
+      "hit_sound": "enmitycombat:example_swordsman_special_hit"
+    },
+    {
+      "tick": 26,
+      "type": "cooldown_reduce",
+      "ticks": 40
+    }
+  ]
+}

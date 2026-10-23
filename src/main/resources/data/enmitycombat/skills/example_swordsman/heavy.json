@@ -1,0 +1,53 @@
+{
+  "name": "Heavy Cleave",
+  "description": "A slow, powerful cleave with long reach and a short stun.",
+  "cooldown": 140,
+  "duration": 34,
+  "cancel_from": 24,
+  "energy_on_hit": 5,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_heavy"
+    },
+    {
+      "tick": 2,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_heavy_charge",
+      "at": "self"
+    },
+    {
+      "tick": 2,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_heavy_charge",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 12,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_heavy_impact",
+      "at": "front",
+      "distance": 3
+    },
+    {
+      "tick": 12,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_heavy_impact",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 12,
+      "type": "hitbox",
+      "range": 3.8,
+      "angle": 130,
+      "damage": 3.2,
+      "knockback": 1.3,
+      "stun": 10,
+      "hit_fx": "enmitycombat:example_swordsman_heavy_hit",
+      "hit_sound": "enmitycombat:example_swordsman_heavy_hit"
+    }
+  ]
+}

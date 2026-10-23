@@ -1,0 +1,43 @@
+{
+  "name": "Falling Moon",
+  "description": "Lunging overhead finisher with heavy knockback.",
+  "cooldown": 0,
+  "duration": 22,
+  "cancel_from": 14,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_basic_3"
+    },
+    {
+      "tick": 0,
+      "type": "dash",
+      "speed": 0.35
+    },
+    {
+      "tick": 4,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_basic_3_slash",
+      "at": "front",
+      "distance": 1.5
+    },
+    {
+      "tick": 4,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_basic_3_slash",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 6,
+      "type": "hitbox",
+      "range": 3.6,
+      "angle": 110,
+      "damage": 1.5,
+      "knockback": 0.9,
+      "hit_fx": "enmitycombat:example_swordsman_basic_3_hit",
+      "hit_sound": "enmitycombat:example_swordsman_basic_3_hit"
+    }
+  ]
+}

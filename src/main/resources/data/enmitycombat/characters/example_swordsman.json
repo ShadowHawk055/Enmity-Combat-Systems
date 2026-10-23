@@ -8,36 +8,36 @@
   "combo_reset_ticks": 30,
   "moveset": {
     "basic": [
-      "enmitycombat:example/basic_1",
-      "enmitycombat:example/basic_2",
-      "enmitycombat:example/basic_3"
+      "enmitycombat:example_swordsman/basic_1",
+      "enmitycombat:example_swordsman/basic_2",
+      "enmitycombat:example_swordsman/basic_3"
     ],
-    "skill_1": "enmitycombat:example/skill_1",
-    "skill_2": "enmitycombat:example/skill_2",
-    "skill_3": "enmitycombat:example/skill_3",
-    "special": "enmitycombat:example/special",
-    "heavy": "enmitycombat:example/heavy",
-    "ultimate": "enmitycombat:example/ultimate",
-    "ultimate_hold": "enmitycombat:example/ultimate_hold"
+    "skill_1": "enmitycombat:example_swordsman/skill_1",
+    "skill_2": "enmitycombat:example_swordsman/skill_2",
+    "skill_3": "enmitycombat:example_swordsman/skill_3",
+    "special": "enmitycombat:example_swordsman/special",
+    "heavy": "enmitycombat:example_swordsman/heavy",
+    "ultimate": "enmitycombat:example_swordsman/ultimate",
+    "ultimate_hold": "enmitycombat:example_swordsman/ultimate_hold"
   },
   "transformed_moveset": {
     "basic": [
-      "enmitycombat:example/t_basic_1",
-      "enmitycombat:example/t_basic_2"
+      "enmitycombat:example_swordsman/t_basic_1",
+      "enmitycombat:example_swordsman/t_basic_2"
     ],
-    "heavy": "enmitycombat:example/t_heavy",
-    "ultimate": "enmitycombat:example/t_ultimate"
+    "heavy": "enmitycombat:example_swordsman/t_heavy",
+    "ultimate": "enmitycombat:example_swordsman/t_ultimate"
   },
   "animations": {
-    "block": "enmitycombat:ex_block",
-    "parry": "enmitycombat:ex_parry",
-    "dodge": "enmitycombat:ex_dodge"
+    "block": "enmitycombat:example_swordsman_block",
+    "parry": "enmitycombat:example_swordsman_parry",
+    "dodge": "enmitycombat:example_swordsman_dodge"
   },
   "fx": {
-    "parry": "enmitycombat:ex_parry_fx",
-    "perfect_dodge": "enmitycombat:ex_perfect_dodge_fx",
-    "guard_break": "enmitycombat:ex_guard_break_fx",
-    "transform_end": "enmitycombat:ex_transform_end_fx"
+    "parry": "enmitycombat:example_swordsman_parry",
+    "perfect_dodge": "enmitycombat:example_swordsman_perfect_dodge",
+    "guard_break": "enmitycombat:example_swordsman_guard_break",
+    "transform_end": "enmitycombat:example_swordsman_transform_end"
   },
   "passives": [
     {
@@ -119,44 +119,16 @@
       "description": "Casting any ultimate grants Speed II for 8 seconds."
     }
   ],
-  "props": [
-    {
-      "id": "blade",
-      "item": "minecraft:iron_sword",
-      "form": "base",
-      "attach": "right_hand",
-      "idle": {
-        "attach": "back",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "rotation": [
-          0,
-          0,
-          -40
-        ]
-      }
-    },
-    {
-      "id": "blade_awakened",
-      "item": "minecraft:netherite_sword",
-      "form": "transformed",
-      "attach": "right_hand",
-      "idle": {
-        "attach": "back",
-        "offset": [
-          0,
-          0,
-          0
-        ],
-        "rotation": [
-          0,
-          0,
-          -40
-        ]
-      }
-    }
-  ]
+  "rig": "enmitycombat:example_swordsman",
+  "sounds": {
+    "block": "enmitycombat:example_swordsman_block",
+    "parry": "enmitycombat:example_swordsman_parry",
+    "perfect_dodge": "enmitycombat:example_swordsman_perfect_dodge",
+    "guard_break": "enmitycombat:example_swordsman_guard_break",
+    "transform_end": "enmitycombat:example_swordsman_transform_end"
+  },
+  "hit": {
+    "fx": "enmitycombat:example_swordsman_hit",
+    "sound": "enmitycombat:example_swordsman_hit"
+  }
 }

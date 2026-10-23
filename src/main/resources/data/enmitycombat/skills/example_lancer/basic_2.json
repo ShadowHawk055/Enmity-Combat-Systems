@@ -1,0 +1,38 @@
+{
+  "name": "Spear Drive",
+  "description": "A heavier thrust that pushes enemies back.",
+  "cooldown": 0,
+  "duration": 16,
+  "cancel_from": 10,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_lancer_basic_2"
+    },
+    {
+      "tick": 3,
+      "type": "fx",
+      "fx": "enmitycombat:example_lancer_basic_2_jab",
+      "at": "front",
+      "distance": 2
+    },
+    {
+      "tick": 3,
+      "type": "sound",
+      "sound": "enmitycombat:example_lancer_basic_2_jab",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 5,
+      "type": "hitbox",
+      "range": 4.8,
+      "angle": 40,
+      "damage": 1.2,
+      "knockback": 0.9,
+      "hit_fx": "enmitycombat:example_lancer_basic_2_hit",
+      "hit_sound": "enmitycombat:example_lancer_basic_2_hit"
+    }
+  ]
+}

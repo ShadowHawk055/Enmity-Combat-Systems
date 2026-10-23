@@ -1,0 +1,38 @@
+{
+  "name": "Spear Jab",
+  "description": "A quick, long-reach thrust.",
+  "cooldown": 0,
+  "duration": 12,
+  "cancel_from": 7,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_lancer_basic_1"
+    },
+    {
+      "tick": 3,
+      "type": "fx",
+      "fx": "enmitycombat:example_lancer_basic_1_jab",
+      "at": "front",
+      "distance": 2
+    },
+    {
+      "tick": 3,
+      "type": "sound",
+      "sound": "enmitycombat:example_lancer_basic_1_jab",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 4,
+      "type": "hitbox",
+      "range": 4.4,
+      "angle": 40,
+      "damage": 0.9,
+      "knockback": 0.2,
+      "hit_fx": "enmitycombat:example_lancer_basic_1_hit",
+      "hit_sound": "enmitycombat:example_lancer_basic_1_hit"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Moonfall",
+  "description": "Cutscene ultimate. Gather power, then unleash one huge guard-breaking blast that stuns everything it hits. Costs full energy.",
+  "cooldown": 0,
+  "duration": 80,
+  "cancel_from": 80,
+  "energy_cost": 100,
+  "uninterruptible": true,
+  "lock_movement": true,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_ultimate"
+    },
+    {
+      "tick": 0,
+      "type": "camera",
+      "animation": "enmitycombat:example_swordsman_ultimate",
+      "hide_hud": true,
+      "letterbox": true,
+      "blend_in": 0,
+      "blend_out": 8
+    },
+    {
+      "tick": 0,
+      "type": "invuln",
+      "ticks": 90
+    },
+    {
+      "tick": 0,
+      "type": "impact_frames",
+      "sequence": "enmitycombat:example_swordsman_ultimate",
+      "start_frame": 132,
+      "frame_duration": 2
+    },
+    {
+      "tick": 20,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_ultimate_charge",
+      "at": "self"
+    },
+    {
+      "tick": 20,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_ultimate_charge",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 44,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_ultimate_burst",
+      "at": "front",
+      "distance": 3
+    },
+    {
+      "tick": 44,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_ultimate_burst",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 44,
+      "type": "hitbox",
+      "range": 9,
+      "angle": 360,
+      "damage": 10.0,
+      "knockback": 2.0,
+      "guard_break": true,
+      "stun": 30,
+      "hit_fx": "enmitycombat:example_swordsman_ultimate_hit",
+      "hit_sound": "enmitycombat:example_swordsman_ultimate_hit"
+    }
+  ]
+}

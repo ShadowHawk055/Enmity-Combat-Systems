@@ -1,0 +1,37 @@
+{
+  "name": "Ember Return",
+  "description": "Transformed follow-up with extra knockback.",
+  "cooldown": 0,
+  "duration": 12,
+  "cancel_from": 7,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_t_basic_2"
+    },
+    {
+      "tick": 2,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_t_basic_2_slash",
+      "at": "self"
+    },
+    {
+      "tick": 2,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_t_basic_2_slash",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 3,
+      "type": "hitbox",
+      "range": 3.8,
+      "angle": 110,
+      "damage": 1.4,
+      "knockback": 0.8,
+      "hit_fx": "enmitycombat:example_swordsman_t_basic_2_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_basic_2_hit"
+    }
+  ]
+}

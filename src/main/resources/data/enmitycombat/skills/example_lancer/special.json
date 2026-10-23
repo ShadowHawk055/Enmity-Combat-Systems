@@ -1,0 +1,65 @@
+{
+  "name": "Skyfall Spear",
+  "description": "Leap and drive your spear down in a guard-breaking, stunning impact.",
+  "cooldown": 360,
+  "duration": 30,
+  "cancel_from": 24,
+  "energy_gain": 12,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_lancer_special"
+    },
+    {
+      "tick": 0,
+      "type": "invuln",
+      "ticks": 14
+    },
+    {
+      "tick": 2,
+      "type": "fx",
+      "fx": "enmitycombat:example_lancer_special_leap",
+      "at": "self"
+    },
+    {
+      "tick": 2,
+      "type": "sound",
+      "sound": "enmitycombat:example_lancer_special_leap",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 2,
+      "type": "dash",
+      "speed": 0.5,
+      "vertical": 0.7
+    },
+    {
+      "tick": 12,
+      "type": "fx",
+      "fx": "enmitycombat:example_lancer_special_skyfall",
+      "at": "front",
+      "distance": 2
+    },
+    {
+      "tick": 12,
+      "type": "sound",
+      "sound": "enmitycombat:example_lancer_special_skyfall",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 12,
+      "type": "hitbox",
+      "range": 5,
+      "angle": 360,
+      "damage": 3.5,
+      "knockback": 1.0,
+      "guard_break": true,
+      "stun": 30,
+      "hit_fx": "enmitycombat:example_lancer_special_hit",
+      "hit_sound": "enmitycombat:example_lancer_special_hit"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "name": "Whirlwind",
+  "description": "Spin three times, hitting everything around you, and gain a short damage boost. You cannot move while casting.",
+  "cooldown": 260,
+  "duration": 30,
+  "cancel_from": 24,
+  "energy_gain": 10,
+  "energy_on_hit": 2,
+  "lock_movement": true,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_skill_3"
+    },
+    {
+      "tick": 0,
+      "type": "buff",
+      "id": "whirl_haste",
+      "cooldown_rate": 1.0,
+      "damage_mult": 1.1,
+      "duration": 100
+    },
+    {
+      "tick": 4,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_skill_3_cast",
+      "at": "self"
+    },
+    {
+      "tick": 4,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_skill_3_cast",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 8,
+      "type": "hitbox",
+      "range": 4.5,
+      "angle": 360,
+      "damage": 1.5,
+      "knockback": 0.5,
+      "hit_fx": "enmitycombat:example_swordsman_skill_3_hit",
+      "hit_sound": "enmitycombat:example_swordsman_skill_3_hit"
+    },
+    {
+      "tick": 14,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_skill_3_impact",
+      "at": "self"
+    },
+    {
+      "tick": 14,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_skill_3_impact",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 14,
+      "type": "hitbox",
+      "range": 4.5,
+      "angle": 360,
+      "damage": 1.5,
+      "knockback": 0.5,
+      "hit_fx": "enmitycombat:example_swordsman_skill_3_hit",
+      "hit_sound": "enmitycombat:example_swordsman_skill_3_hit"
+    },
+    {
+      "tick": 20,
+      "type": "hitbox",
+      "range": 4.5,
+      "angle": 360,
+      "damage": 2.0,
+      "knockback": 1.0,
+      "hit_fx": "enmitycombat:example_swordsman_skill_3_hit",
+      "hit_sound": "enmitycombat:example_swordsman_skill_3_hit"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Crimson Cleave",
+  "description": "Transformed heavy attack. Hits harder and breaks guards.",
+  "cooldown": 100,
+  "duration": 28,
+  "cancel_from": 20,
+  "energy_on_hit": 4,
+  "timeline": [
+    {
+      "tick": 0,
+      "type": "animation",
+      "anim": "enmitycombat:example_swordsman_t_heavy"
+    },
+    {
+      "tick": 8,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_t_heavy_swing",
+      "at": "front",
+      "distance": 2
+    },
+    {
+      "tick": 8,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_t_heavy_swing",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 9,
+      "type": "fx",
+      "fx": "enmitycombat:example_swordsman_t_heavy_impact",
+      "at": "front",
+      "distance": 3
+    },
+    {
+      "tick": 9,
+      "type": "sound",
+      "sound": "enmitycombat:example_swordsman_t_heavy_impact",
+      "volume": 1.0,
+      "pitch": 1.0
+    },
+    {
+      "tick": 9,
+      "type": "hitbox",
+      "range": 5,
+      "angle": 160,
+      "damage": 4.5,
+      "knockback": 1.5,
+      "guard_break": true,
+      "hit_fx": "enmitycombat:example_swordsman_t_heavy_hit",
+      "hit_sound": "enmitycombat:example_swordsman_t_heavy_hit"
+    }
+  ]
+}
